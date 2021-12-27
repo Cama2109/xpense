@@ -89,6 +89,38 @@ border: none;
         width: 900px;
         margin-right: auto;
         margin-left: auto;
+      
+     margin-top: 30px;
+         display:grid;
+         grid-template-columns: auto auto auto ;
+         grid-gap:30px;
+         grid-template-areas:" card-1 card-1 card-2 card-2"
+         ; 
+    }
+   
+    @include breakpoint-down(900px){
+    .flex-card { width: 900px;
+      margin-left: auto;
+      margin-right: auto;
+  
+      margin-top: 30px;
+         display:grid;
+         grid-template-columns: auto ;
+         grid-gap:30px;
+         grid-template-areas:"card-1 card-1 card-1 card-1"
+         "card-2 card-2 card-2 card-2"
+         ; }
+    }
+    .card-1{
+        grid-area: card-1;
+        width:700px;
+        margin-left: 370px;
+    }
+    .card-2{
+        grid-area: card-2;
+         width:400px;
+         margin-left:350px;
+         margin-bottom: 20px;
     }
     .container{
         width: 1110px;
@@ -126,5 +158,6 @@ line-height: 100%;
     color: #BDBDBD;
 
 }
+
 
 

@@ -1,0 +1,117 @@
+.footer{
+    width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+     display:grid;
+     grid-template-columns: auto auto auto ;
+     grid-gap:30px;
+     grid-template-areas:" footer-1 footer-2 footer-3 footer-4 "
+     ; 
+}
+.footer>div{
+    margin-left: 20px;
+}
+.footer-1{
+    grid-area: footer-1;
+}
+.footer-2{
+    grid-area: footer-2;
+}
+.footer-3{
+    grid-area: footer-3;
+}
+.footer-4{
+    grid-area: footer-4;
+ 
+
+}
+.footer-title{
+    margin-left: 40px; font-size: 22px;
+
+}
+.footer-title-2{
+    font-size: 22px;
+}
+.footer-ul{
+    list-style-type: none;
+    line-height:30px;
+  
+}
+.footer-link{
+text-decoration: none;
+color: rgb(0, 0, 0);
+
+}
+.footer-logo{
+    margin-top:20px;
+}
+.footer-text1{
+    font-size:19px;
+    color: #BDBDBD;
+}
+.footer-text2{
+    font-size:15px;
+    color: #BDBDBD;
+}
+.footer-input{
+    color: rgb(0, 0, 0);
+    border: 1px solid #292830;
+    font-size:12px;
+ width: 250px;
+ height:39px;
+
+border-radius: 8px;
+}
+.footer-button{
+    width: 90px;
+    height:37px;
+    border-radius: 8px;
+    background-color: #e64d0b;
+    color:#f7f7f7;
+    font-weight:bold;
+    border:  none;
+    position: absolute;
+    left: 160px;
+    top :112px;
+  
+    transition: 1s ease;
+}
+.footer-button:hover{
+    background-color: #df7c52;
+}
+@include breakpoint-down(900px){
+    .footer{
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 30px;
+         display:grid;
+         grid-template-columns: auto auto ;
+         grid-gap:20px;
+         grid-template-areas:" footer-1 footer-1 footer-2  footer-3"
+         "footer-4 footer-4 footer-4 footer-4"
+         ; 
+    }
+    
+    
+}
+@include breakpoint-down(700px){
+    .footer{
+        width: 700px;
+        margin-left: 230px;
+        
+        margin-top: 30px;
+         display:grid;
+         grid-template-columns: auto auto ;
+         grid-gap:20px;
+         grid-template-areas:" footer-1 footer-1 footer-2  footer-2"
+         "footer-3 footer-3 footer-4 footer-4"
+         ; 
+    }
+    
+    
+}
+
+    
+    
